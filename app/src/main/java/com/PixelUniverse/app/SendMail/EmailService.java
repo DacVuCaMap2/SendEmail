@@ -5,5 +5,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface EmailService {
-    ResponseEntity<?> sendEmailToConfirmOrder();
+    ResponseEntity<?> sendEmailToConfirmOrder(EmailConfirmOrder emailConfirmOrder);
 }

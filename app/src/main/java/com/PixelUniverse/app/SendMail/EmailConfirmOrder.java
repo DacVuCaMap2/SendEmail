@@ -12,8 +12,8 @@ public class EmailConfirmOrder {
     private String domainStore;
     private String invoicePrefix;
     private String invoiceNo;
-    private String shipping_address_1;
-    private String shipping_address_2;
-    private String shipping_city;
+    private String shippingAddress1;
+    private String shippingAddress2;
+    private String shippingCity;
     private List<EmailConfirmOrderDetails> emailConfirmOrderDetailsList;
 }

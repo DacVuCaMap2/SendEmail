@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 public class EmailController {
     private final EmailService emailService;
-    @GetMapping("/send")
-    public ResponseEntity<?> sendEmail(){
-        return emailService.sendEmailToConfirmOrder();
+    @PostMapping("/send")
+    public ResponseEntity<?> sendEmail(@RequestBody EmailConfirmOrder emailConfirmOrder){
+        return emailService.sendEmailToConfirmOrder(emailConfirmOrder);
     }
 }
