@@ -1,0 +1,194 @@
+<style>
+    .email-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        max-width: 600px;
+        font-family: Arial, sans-serif;
+    }
+
+    .email-header {
+        text-align: center;
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .email-header h1 {
+        color: #327dba;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .email-body {
+        color: #333333;
+        line-height: 1.6;
+    }
+
+    .email-body h2,
+    .email-body h3 {
+        color: #333333;
+        margin: 20px 0 10px;
+    }
+
+    .email-body h2 {
+        font-size: 20px;
+    }
+
+    .email-body h3 {
+        font-size: 18px;
+    }
+
+    .email-body ol {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .email-body ol li {
+        margin-bottom: 10px;
+    }
+
+    .email-body p {
+        margin: 10px 0;
+    }
+
+    .email-body a {
+        color: #327dba;
+        text-decoration: none;
+    }
+
+    .email-body a:hover {
+        text-decoration: underline;
+    }
+
+    .email-footer {
+        text-align: center;
+        border-top: 1px solid #eeeeee;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+
+    .email-footer p {
+        margin: 0;
+        color: #666666;
+    }
+
+    .email-footer .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        color: #ffffff;
+        background-color: #327dba;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .email-footer .btn:hover {
+        background-color: #45a049;
+    }
+
+    .productDetails {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mail-products {
+        font-size: 12px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .header-row {
+        border-bottom: solid 1px black;
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    
+        font-family: Arial, sans-serif;
+    
+    }
+
+
+    thead {
+        background-color: #f4f4f4;
+    
+        color: #333;
+    
+    }
+
+
+    .header-row th {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 2px solid #ddd;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        vertical-align: top;
+    }
+    .center {
+        text-align: center;
+    }
+    table,
+    th,
+    td {
+        border: 1px solid #ddd;
+    }
+</style>
+<div class="email-container">
+    <div class="email-header">
+        <h1>Payment successfully!</h1>
+    </div>
+    <div class="email-body">
+        <p>Dear <strong>VU HAI NAM</strong>,</p>
+        <p>Thank you for your recent order from <strong>SHOPPING</strong>!</p>
+        <p>We are pleased to confirm that your order has been successfully processed. Please find your order details
+            below:</p>
+        <p><strong>Invoice Number:</strong> 123123123</p>
+        <h3>Product Information:</h3>
+        <table class="table mail-products">
+            <thead>
+                <tr class="row header-row">
+                    <th class="col-8">Infomation</th>
+                    <th class="col-1">Quantity</th>
+                    <th class="col-1">Price</th>
+                    <th class="col-1">Fee ship</th>
+                    <th class="col-1">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <strong>That lung da dep zai so 1 the gioi</strong> <br>
+                        <span>Size 1 color pink</span> </td>
+                    <td class="center">12</td>
+                    <td>12</td>
+                    <td class="center">12</td>
+                    <td>12</td>
+                </tr> @endforeach </tbody>
+        </table>
+        <h3>Shipping Address:</h3>
+        <p>tp lang son tinh lang son </p>
+        <hr>
+        <h3>Contact Information:</h3>
+        <p> If you have any questions or concerns regarding your order, please feel free to contact us at <a
+                href="mailto:info@bestsell.io" class="linkMail">info@
+                shoping
+            </a>. We are always happy to assist you.</p>
+        <p>Thank you again for your order! We hope you enjoy your new purchase.</p>
+    </div>
+    <div class="email-footer"> <a href="/" class="btn">Continues shopping</a> </div>
+</div>
