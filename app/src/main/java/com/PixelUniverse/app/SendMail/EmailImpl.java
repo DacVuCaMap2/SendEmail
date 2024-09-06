@@ -23,7 +23,7 @@ public class EmailImpl implements EmailService {
             MimeMessage mimeMessage = javaMailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage,true,"UTF-8");
             helper.setFrom(sender);
-            helper.setTo("namvuyhinata@gmail.com");
+            helper.setTo(emailConfirmOrder.getEmailTo());
             helper.setText(htmlBody,true);
             helper.setSubject("Payment success fully");
             javaMailSender.send(mimeMessage);
